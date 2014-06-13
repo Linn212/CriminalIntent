@@ -1,4 +1,4 @@
-package com.linn.criminalintent.app.Model;
+package com.linn.criminalintent.app;
 
 import java.util.Date;
 import java.util.UUID;
@@ -12,6 +12,11 @@ public class Crime {
     public Crime() {
         mId = UUID.randomUUID();
         mDate = new Date();
+    }
+
+    @Override
+    public String toString() {
+        return mTitle;
     }
 
     public String getTitle() {
